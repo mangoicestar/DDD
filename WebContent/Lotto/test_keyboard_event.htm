@@ -1,0 +1,28 @@
+<html>
+	<head>
+	<script>
+		/*
+		¤W:38
+		¤U:40
+		¥ª:37
+		¥k:39
+		B:66
+		A:65
+		
+		*/
+		var eves = "";
+	    function mouse(e){
+	        alert(e.clientX);
+	    }
+	    function key(e){
+	        eves = eves + e.keyCode;
+	        alert(e.keyCode + "<br>" + "eves = " + eves);
+	    }
+	</script>
+	</head>
+	<body>
+		<input type="button" onmousedown="mouse(event);" value="Test" /><br />
+		<input type="input" onkeydown="key(event)" />
+	
+	</body>
+</html>
